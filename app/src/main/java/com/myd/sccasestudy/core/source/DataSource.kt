@@ -1,4 +1,4 @@
-package com.myd.sccasestudy
+package com.myd.sccasestudy.core.source
 
 import android.os.Handler
 import android.os.Looper
@@ -14,7 +14,7 @@ data class FetchError(val errorDescription: String)
 
 typealias FetchCompletionHandler = (FetchResponse?, FetchError?) -> Unit
 
-private data class ProcessResult(g
+private data class ProcessResult(
     val fetchResponse: FetchResponse?,
     val fetchError: FetchError?,
     val waitTime: Double
