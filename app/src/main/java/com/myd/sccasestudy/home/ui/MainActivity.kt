@@ -1,5 +1,6 @@
-package com.myd.sccasestudy.home
+package com.myd.sccasestudy.home.ui
 
+import android.os.Bundle
 import androidx.activity.viewModels
 import com.myd.sccasestudy.R
 import com.myd.sccasestudy.core.base.BaseActivity
@@ -18,5 +19,10 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>() {
 
     override fun bindViewModel(dataBinding: ActivityMainBinding) {
         dataBinding.viewModel = getViewModel()
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        getViewModel().getPeople()
     }
 }
