@@ -54,4 +54,6 @@ dependencies {
     //viewmodel ktx
     implementation "androidx.core:core-ktx:$ktxCoreVersion"
     implementation "androidx.activity:activity-ktx:$ktxActivityVersion"
+
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 }

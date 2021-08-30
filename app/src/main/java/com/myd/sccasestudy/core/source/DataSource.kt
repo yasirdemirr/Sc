@@ -2,6 +2,7 @@ package com.myd.sccasestudy.core.source
 
 import android.os.Handler
 import android.os.Looper
+import javax.inject.Inject
 import kotlin.math.min
 import kotlin.random.Random
 
@@ -20,7 +21,7 @@ private data class ProcessResult(
     val waitTime: Double
 )
 
-class DataSource {
+class DataSource @Inject constructor() {
     companion object {
         private var people: List<Person> = listOf()
     }
